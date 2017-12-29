@@ -14,10 +14,10 @@ void GameSquare::paint(QPainter *painter, const QStyleOptionGraphicsItem *option
         color = QColor{"#0F0"};
     }
     painter->drawRect(0,0,8,8);
-    painter->fillRect(0,0,8,8,color); // same thing, local coordinates.
+    painter->fillRect(0,0,8,8,color);
 }
 QRectF GameSquare::boundingRect() const{
-    return QRect(0,0,8,8); // in local coordinates right... to be tested
+    return QRect(0,0,8,8);
 }
 void GameSquare::mousePressEvent(QGraphicsSceneMouseEvent *event){
      m_active = !m_active;
